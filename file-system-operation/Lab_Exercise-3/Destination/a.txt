@@ -1,0 +1,5 @@
+1. Prevents application crashes.
+2. Helps in debugging.
+3. Improves application stability.
+4. Provides better user experience.
+5. Handles missing files or permission issues properly.
