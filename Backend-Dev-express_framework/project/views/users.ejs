@@ -1,0 +1,11 @@
+<h2>User List</h2>
+<form method="GET">
+  <input type="text" name="name" placeholder="Search name">
+  <button>Search</button>
+</form>
+
+<ul>
+  <% users.forEach(user => { %>
+    <li><%= user %></li>
+  <% }) %>
+</ul>
