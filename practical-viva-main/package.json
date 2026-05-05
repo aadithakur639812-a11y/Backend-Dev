@@ -1,0 +1,23 @@
+{
+  "name": "practical-viva",
+  "version": "1.0.0",
+  "description": "Secure banking API with frontend and backend folders",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix backend run dev",
+    "start": "npm --prefix backend start",
+    "install:backend": "npm --prefix backend install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityasingh4441/practical-viva.git"
+  },
+  "keywords": [],
+  "author": "Aditya Singh",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/adityasingh4441/practical-viva/issues"
+  },
+  "homepage": "https://github.com/adityasingh4441/practical-viva#readme"
+}

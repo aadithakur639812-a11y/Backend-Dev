@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Banking - Accounts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <strong>Secure Banking</strong>
+    <a href="index.html">Login</a>
+    <a href="accounts.html">Accounts</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="admin.html">Admin</a>
+    <button id="logoutBtn" class="nav-button">Logout</button>
+  </nav>
+
+  <main class="page">
+    <section class="panel">
+      <div class="section-title">
+        <h1>My Accounts</h1>
+        <button id="loadAccountsBtn">Refresh</button>
+      </div>
+      <div id="userInfo" class="muted"></div>
+      <div id="accounts" class="list"></div>
+    </section>
+
+    <section class="grid">
+      <form id="depositForm" class="form card">
+        <h2>Deposit</h2>
+        <input id="depositAccountId" type="text" placeholder="Account ID" required>
+        <input id="depositAmount" type="number" min="1" step="0.01" placeholder="Amount" required>
+        <button type="submit">Deposit</button>
+      </form>
+
+      <form id="withdrawForm" class="form card">
+        <h2>Withdraw</h2>
+        <input id="withdrawAccountId" type="text" placeholder="Account ID" required>
+        <input id="withdrawAmount" type="number" min="1" step="0.01" placeholder="Amount" required>
+        <button type="submit">Withdraw</button>
+      </form>
+
+      <form id="transferForm" class="form card">
+        <h2>Transfer</h2>
+        <input id="fromAccountId" type="text" placeholder="From Account ID" required>
+        <input id="toAccountId" type="text" placeholder="To Account ID" required>
+        <input id="transferAmount" type="number" min="1" step="0.01" placeholder="Amount" required>
+        <button type="submit">Transfer</button>
+      </form>
+    </section>
+
+    <p id="message"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
